@@ -1,0 +1,28 @@
+package Usefulclasses;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Datedemo {
+
+	public static void main(String[] args) {
+		//create input stream object
+    Scanner sc=new Scanner(System.in);
+    
+    System.out.println("Enter date:(dd/mm/yy)");
+    String date=sc.nextLine();
+    //conventional date used from java.util package
+    Date datevar = new Date(date);
+    //LocalDate from java.time.package
+    LocalDate ld=LocalDate.now(); 
+    //create calender instance by calling getInstance() static method from Calender abstract
+    Calendar cal=Calendar.getInstance();
+     
+    Calendar gcalendar=new GregorianCalendar();
+    System.out.println("Local date:"+ld);
+
+	}
+
+}
