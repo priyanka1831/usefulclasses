@@ -1,0 +1,19 @@
+package Usefulclasses;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Numbersum {
+	public static void main(String[]args){
+		String number;
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter number:");
+		number=sc.nextLine(); 
+		String strarray[]=new String[100];
+		int i=0;float sum=0.0f;
+		float numarray[]=new float[100];
+		strarray=number.split(",");
+		
+	}
+
+}
